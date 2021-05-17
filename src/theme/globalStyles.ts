@@ -5,18 +5,36 @@ const globalStyles = createGlobalStyle`
     margin:0;
     padding:0;
     box-sizing:inherit;
+	font-family: 'Roboto', sans-serif;
 }
 html {
     font-size:62.5%;
+
+
 }
 body {
     width:100%;
 	min-height:100vh;
     line-height:1.7;
     box-sizing:border-box;
-
+	 
+	background-color:#121212;
                       
-    &::-webkit-scrollbar {
+	height:500vh; //for testing purposes
+   
+}
+
+
+svg {
+	cursor:pointer;
+}
+
+
+`;
+
+export default globalStyles;
+
+/* &::-webkit-scrollbar {
 			width: 10px;
 			background-color: ${({
 				theme: {
@@ -34,8 +52,4 @@ body {
 				},
 			}) => mainBlue};
 			border-radius: 11px;
-	}
-}
-`;
-
-export default globalStyles;
+	} */

@@ -2,10 +2,16 @@ import { DefaultTheme } from 'styled-components';
 
 const theme: DefaultTheme = {
 	colors: {
-		mainBlue: 'rgb(135, 241, 255)',
+		// header: {
+		// 	backgroundDark: '#202020',
+		// 	dark: '#121212',
+		// 	lightDark: '#323232',
+
+		// 	grey: '#7c7c7c',
+		// },
 		common: {
 			white: '#fff',
-			black: '#000',
+			black: '#202020',
 		},
 	},
 
