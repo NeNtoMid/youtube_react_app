@@ -92,7 +92,7 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 						src={SubscriptionProfileImg}
 						alt='youtube subscription profile'
 					/>
-					Joma Tech
+					<span>Joma Tech</span>
 					<LiveSvg />
 				</a>
 				<a href='/'>
@@ -100,7 +100,7 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 						src={SubscriptionProfileImg}
 						alt='youtube subscription profile'
 					/>
-					Wip Bros
+					<span>Joma Tech</span>
 					<StyledNewContentContainer>
 						<div></div>
 					</StyledNewContentContainer>
@@ -110,7 +110,7 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 						src={SubscriptionProfileImg}
 						alt='youtube subscription profile'
 					/>
-					ZagrajnikTv
+					<span>Joma Tech</span>
 					<StyledNewContentContainer>
 						<div></div>
 					</StyledNewContentContainer>
@@ -120,7 +120,7 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 						src={SubscriptionProfileImg}
 						alt='youtube subscription profile'
 					/>
-					Krulestwo-Wath
+					<span>Joma Tech</span>
 					<StyledNewContentContainer>
 						<div></div>
 					</StyledNewContentContainer>
@@ -130,7 +130,7 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 						src={SubscriptionProfileImg}
 						alt='youtube subscription profile'
 					/>
-					Krulestwo-Wath
+					<span>Joma Tech</span>
 					<StyledNewContentContainer>
 						<div></div>
 					</StyledNewContentContainer>
@@ -140,7 +140,7 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 						src={SubscriptionProfileImg}
 						alt='youtube subscription profile'
 					/>
-					Krulestwo-Wath
+					<span>Joma Tech</span>
 					<StyledNewContentContainer>
 						<div></div>
 					</StyledNewContentContainer>
@@ -150,7 +150,17 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 						src={SubscriptionProfileImg}
 						alt='youtube subscription profile'
 					/>
-					Krulestwo-Wath
+					<span>Joma Tech</span>
+					<StyledNewContentContainer>
+						<div></div>
+					</StyledNewContentContainer>
+				</a>{' '}
+				<a href='/'>
+					<img
+						src={SubscriptionProfileImg}
+						alt='youtube subscription profile'
+					/>
+					<span>Joma Tech</span>
 					<StyledNewContentContainer>
 						<div></div>
 					</StyledNewContentContainer>
@@ -160,17 +170,7 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 						src={SubscriptionProfileImg}
 						alt='youtube subscription profile'
 					/>
-					Krulestwo-Wath
-					<StyledNewContentContainer>
-						<div></div>
-					</StyledNewContentContainer>
-				</a>
-				<a href='/'>
-					<img
-						src={SubscriptionProfileImg}
-						alt='youtube subscription profile'
-					/>
-					Krulestwo-Wath
+					<span>Joma Tech</span>
 					<StyledNewContentContainer>
 						<div></div>
 					</StyledNewContentContainer>

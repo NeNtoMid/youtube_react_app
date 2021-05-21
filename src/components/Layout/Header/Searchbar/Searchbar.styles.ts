@@ -3,7 +3,7 @@ import styled from 'styled-components';
 interface StyledSearchbarProps {
 	showInput: boolean;
 }
-export const StyledSearchbar = styled.div<StyledSearchbarProps>`
+export const StyledSearchbar = styled.form<StyledSearchbarProps>`
 	display: grid;
 	grid-template-columns: 1fr auto;
 

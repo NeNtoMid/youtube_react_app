@@ -18,9 +18,18 @@ body {
     line-height:1.7;
     box-sizing:border-box;
 	 
-	background-color:#121212;
+	/* background-color:#121212; */
+	background-color: #181818;
                       
-	height:500vh; //for testing purposes
+
+
+	&::-webkit-scrollbar {
+		width: 6px;
+		background-color: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		background: #909090;
+	}
    
 }
 
@@ -29,6 +38,10 @@ svg {
 	cursor:pointer;
 }
 
+
+a {
+	text-decoration:none;
+}
 
 `;
 

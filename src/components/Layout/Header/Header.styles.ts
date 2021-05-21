@@ -5,6 +5,9 @@ interface StyledHeaderProps {
 }
 
 export const StyledHeader = styled.header<StyledHeaderProps>`
+	position: fixed;
+	z-index: 1;
+
 	background-color: #202020;
 	padding: 2rem;
 	display: grid;

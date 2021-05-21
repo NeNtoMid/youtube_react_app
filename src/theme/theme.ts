@@ -31,6 +31,11 @@ const theme: DefaultTheme = {
 		}: ${breakpointMax}px) and (min-${
 			vertical ? 'height' : 'width'
 		}: calc(${breakpointMin}px + 0.02px))`,
+	lineclamp: (lineNumbers: number) => `	
+	-webkit-line-clamp: ${lineNumbers};
+	-webkit-box-orient: vertical;
+	display: -webkit-box;
+	overflow: hidden;`,
 };
 
 export default theme;

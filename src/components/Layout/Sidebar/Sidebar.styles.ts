@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const StyledSidebar = styled.nav`
 	overflow-y: scroll;
 
+	scrollbar-width: none;
+
 	&::-webkit-scrollbar {
 		width: 6px;
 		background-color: transparent;
@@ -19,7 +21,8 @@ export const StyledSidebar = styled.nav`
 
 	width: 24rem;
 	background-color: #212121;
-	position: absolute;
+
+	position: fixed;
 	top: 0;
 	left: 0;
 	padding: 2rem 0;
@@ -30,14 +33,19 @@ export const StyledSidebar = styled.nav`
 
 		list-style: none;
 
-		padding: 10%;
+		padding: 10% 0;
 
 		margin-top: 6%;
-		grid-row-gap: 4rem;
+		grid-row-gap: 1rem;
 
 		border-top: 1px solid #383838;
 		border-bottom: 1px solid #383838;
+
+		li {
+			cursor: pointer;
+		}
 		li a {
+			padding: 5% 10%;
 			display: grid;
 			grid-template-columns: auto 1fr;
 			align-items: center;
@@ -48,12 +56,18 @@ export const StyledSidebar = styled.nav`
 			font-size: 1.4rem;
 			line-height: 20px;
 
+			transition: all 0.06s;
+
 			svg {
 				width: 2.4rem;
 				height: 2.4rem;
 			}
 			svg path {
 				fill: #909090;
+			}
+
+			&:hover {
+				background-color: #383838;
 			}
 		}
 	}
@@ -132,6 +146,9 @@ export const StyledSubscriptionsContainer = styled.div`
 			svg {
 				width: 1.6rem;
 				height: 1.6rem;
+			}
+			span {
+				${({ theme }) => theme.lineclamp(1)}
 			}
 		}
 

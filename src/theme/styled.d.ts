@@ -20,5 +20,6 @@ declare module 'styled-components' {
 			breakpointMax: number,
 			vertical: boolean
 		) => string;
+		lineclamp: (lineNumbers: number) => string;
 	}
 }

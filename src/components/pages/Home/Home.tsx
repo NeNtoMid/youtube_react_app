@@ -6,18 +6,15 @@ import SubSidebar from './SubSidebar/SubSidebar';
 
 import CategoriesBar from './CategoriesBar/CategoriesBar';
 
-import Video from '../../Shared/Video/Video';
+import Videos from '../../Shared/Videos/Videos';
 
 const Home = () => {
 	return (
 		<StyledHome>
 			<SubSidebar />
 			<CategoriesBar />
-			<div>
-				{[...new Array(20)].map(() => (
-					<Video />
-				))}
-			</div>
+
+			<Videos />
 		</StyledHome>
 	);
 };
