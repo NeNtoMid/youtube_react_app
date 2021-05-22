@@ -10,6 +10,8 @@ export const StyledVideos = styled.ul`
 
 	margin: 0 auto;
 
+	list-style: none;
+
 	padding: 2rem 0;
 	grid-gap: 3rem 2rem;
 

@@ -20,6 +20,7 @@ body {
 	 
 	/* background-color:#121212; */
 	background-color: #181818;
+	color:#fff;
                       
 
 

@@ -25,7 +25,10 @@ import { ReactComponent as LogoutSvg } from './../../../assets/icons/Sidebar/log
 import SubscriptionProfileImg from './../../../assets/images/Sidebar/subscriptionProfile.jpg';
 
 import Menubar from '../../Shared/Menubar/Menubar';
+
 import { StyledNewContentContainer } from './Sidebar.styles';
+
+import { NavLink } from 'react-router-dom';
 
 interface SidebarProps {
 	click: () => void;
@@ -40,48 +43,48 @@ const Sidebar: React.FC<SidebarProps> = ({ click }) => {
 
 			<ul>
 				<li>
-					<a>
+					<NavLink to='/'>
 						<HomeSvg />
 						Home
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a>
+					<NavLink to='/subscriptions'>
 						<SubscriptionsSvg />
 						Subscriptions
-					</a>
+					</NavLink>
 				</li>
 
 				<li>
-					<a>
+					<NavLink to='liked-videos'>
 						<LikedVideosSvg />
 						Liked videos
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a>
+					<NavLink to='/just-to'>
 						<JustToSvg />
 						Just to
-					</a>
+					</NavLink>
 				</li>
 
 				<li>
-					<a>
+					<NavLink to='/populate'>
 						<PopulateSvg />
 						Populate
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a>
+					<NavLink to='/sidebar'>
 						<SidebarSvg />
 						Sidebar
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a>
+					<NavLink to='/logout'>
 						<LogoutSvg />
 						Logout
-					</a>
+					</NavLink>
 				</li>
 			</ul>
 

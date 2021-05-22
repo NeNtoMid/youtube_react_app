@@ -1,8 +1,27 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { StyledLogin } from './Login.styles';
 
+import { useAppDispatch, useAppSelector } from './../../../redux/hooks';
+
+import { useHistory } from 'react-router-dom';
+import { login } from './../../../redux/actions/auth.action';
+
 const Login: React.FC = () => {
+	const dispatch = useAppDispatch();
+
+	const history = useHistory();
+
+	const handleLogin = () => {
+		dispatch(login());
+	};
+
+	const isAuthenticated = useAppSelector((state) => state.user.isAuthenticated);
+
+	useEffect(() => {
+		isAuthenticated && history.replace('/');
+	}, [isAuthenticated, history]);
+
 	return (
 		<StyledLogin>
 			<div>
@@ -15,7 +34,7 @@ const Login: React.FC = () => {
 					made by Dominik Ptaszek :D
 				</h1>
 
-				<button>Login with Google</button>
+				<button onClick={handleLogin}>Login with Google</button>
 				<p>
 					A Youtube clone project made using Youtube-api
 					<br /> (This app does not collect your data)

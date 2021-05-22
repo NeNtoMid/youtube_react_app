@@ -10,35 +10,37 @@ import { ReactComponent as LogoutSvg } from './../../../../assets/icons/Sidebar/
 
 import { StyledSubSidebar } from './SubSidebar.styles';
 
+import { NavLink } from 'react-router-dom';
+
 const SubSidebar = () => {
 	return (
 		<StyledSubSidebar>
 			<ul>
 				<li>
-					<a href='#' className='active'>
+					<NavLink to='/' className='active'>
 						<HomeSvg />
 						Home
-					</a>
+					</NavLink>
 				</li>
 				<li>
-					<a href='#'>
+					<NavLink to='/subscriptions'>
 						<SubscriptionsSvg />
 						Subscriptions
-					</a>
+					</NavLink>
 				</li>
 
 				<li>
-					<a href='#'>
+					<NavLink to='/liked-videos'>
 						<LikedVideosSvg />
 						Liked videos
-					</a>
+					</NavLink>
 				</li>
 
 				<li>
-					<a href='#'>
+					<NavLink to='/logout'>
 						<LogoutSvg />
 						Logout
-					</a>
+					</NavLink>
 				</li>
 			</ul>
 		</StyledSubSidebar>

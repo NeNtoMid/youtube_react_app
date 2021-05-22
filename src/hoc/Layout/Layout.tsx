@@ -18,8 +18,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 		<StyledLayout>
 			<Header click={handleChangeShowMenu} />
 			{showMenu && <Sidebar click={handleChangeShowMenu} />}
-
-			{children}
+			<div style={{ marginTop: '7.3rem' }}>{children}</div>
 		</StyledLayout>
 	);
 };
