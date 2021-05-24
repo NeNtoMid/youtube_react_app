@@ -17,8 +17,7 @@ body {
 	min-height:100vh;
     line-height:1.7;
     box-sizing:border-box;
-	 
-	/* background-color:#121212; */
+	
 	background-color: #181818;
 	color:#fff;
                       
