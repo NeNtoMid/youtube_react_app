@@ -111,8 +111,8 @@ export const StyledNewContentContainer = styled.div`
 export const StyledSubscriptionsContainer = styled.div`
 	padding: 5% 0;
 
-	max-height: 300px;
-	/* overflow-y: hidden;  ANCHOR change it later*/
+	max-height: 30rem;
+
 	h3 {
 		font-size: 1.4rem;
 

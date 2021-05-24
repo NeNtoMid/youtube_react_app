@@ -22,7 +22,7 @@ const Videos = () => {
 		dispatch(fetchPopularVideos(locale));
 
 		setLoading(false);
-	}, [dispatch]);
+	}, [dispatch, locale]);
 
 	const videos = useAppSelector((state) => state.videos.data?.items);
 
